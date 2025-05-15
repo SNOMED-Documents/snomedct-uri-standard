@@ -1,4 +1,4 @@
-# URI Standard : Recent Updates
+# Recent Updates
 
 #### The most recently updated pages in this document are listed below
 

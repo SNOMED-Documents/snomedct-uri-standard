@@ -1,4 +1,4 @@
-# URI Standard : 2 SNOMED CT URI Space
+# 2 SNOMED CT URI Space
 
   * [2.1 URIs for Editions and Versions](2.1-URIs-for-Editions-and-Versions_29951164.html)
   * [2.2 URIs for Components and Reference Set Members](2.2-URIs-for-Components-and-Reference-Set-Members_29951165.html)

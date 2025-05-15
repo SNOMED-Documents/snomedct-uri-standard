@@ -1,4 +1,4 @@
-# URI Standard : 2.6 URIs for Properties
+# 2.6 URIs for Properties
 
 # Background
 
