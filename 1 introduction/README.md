@@ -84,3 +84,10 @@ Footnotes Ref | Notes
 [7](https://confluence.ihtsdotools.org/display/DOCURI/1+Introduction#FootnoteMarker7-0 "Footnote: Click to return to reference in text") |  www.snomed.org/tig?t=glsct_ss_Concept   
 [8](https://confluence.ihtsdotools.org/display/DOCURI/1+Introduction#FootnoteMarker8-0 "Footnote: Click to return to reference in text") |  [http://www.snomed.org/tig?t=trg2main_title](https://confluence.ihtsdotools.org/display/WIPRELFMT/4+Component+Release+Files+Specification) Section number relative to July 2012 version.   
 [9](https://confluence.ihtsdotools.org/display/DOCURI/1+Introduction#FootnoteMarker9-0 "Footnote: Click to return to reference in text") |  In the case where a release centre has not organized an edition such that it correspond to the transitive contents of a single module, an additional module can be created that depends on all the modules in the edition. This additional module can then be used to identify that edition. Note that it is non-conformant to release only part of a module. 
+
+
+
+
+
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&entry.1767247133=URI+Standard&entry.670899847=1%20Introduction" class="button primary">Provide Feedback</a>

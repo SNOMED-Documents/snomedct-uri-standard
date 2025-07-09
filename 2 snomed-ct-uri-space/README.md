@@ -9,3 +9,10 @@
   * [2.7 Comparing URIs for Equality of Reference](2.7-Comparing-URIs-for-Equality-of-Reference_29951169.html)
   * [2.8 URIs for Unpublished Content](2.8-URIs-for-Unpublished-Content_134520516.html)
 
+
+
+
+
+
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&entry.1767247133=URI+Standard&entry.670899847=2%20SNOMED%20CT%20URI%20Space" class="button primary">Provide Feedback</a>
