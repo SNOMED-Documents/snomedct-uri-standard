@@ -64,7 +64,7 @@ This standard builds upon several other elements of the SNOMED CT ecosystem. In 
 
 This document defines a standard set of identifiers in the form of URIs. In order to maintain the integrity of the associated URI space, it is highly desirable for SNOMED International to maintain ownership of the **snomed.info** DNS domain. While not a requirement of this specification, URIs defined by this specification, with respect to SNOMED CT core, are resolvable through services provided by SNOMED International.
 
-It is important to understand that the URIs in this specification do not identify the representation of an entity, but rather identify the entity itself. [Resolving SNOMED CT URIs](<../3 snomed-ct-uris-in-use/3.1-resolving-snomed-ct-uris.md>) covers this issue in more detail.
+It is important to understand that the URIs in this specification do not identify the representation of an entity, but rather identify the entity itself. [#resolving-snomed-ct-uris](<../3 snomed-ct-uris-in-use/#resolving-snomed-ct-uris> "mention") covers this issue in more detail.
 
 ***
 
