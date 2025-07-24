@@ -1,19 +1,19 @@
 # SNOMED CT URIs in Use
 
-* [#resolving-snomed-ct-uris](./#resolving-snomed-ct-uris "mention")
-* [#uri-use-cases](./#uri-use-cases "mention")
+* [#resolving-snomed-ct-uris](3-snomed-ct-uris-in-use.md#resolving-snomed-ct-uris "mention")
+* [#uri-use-cases](3-snomed-ct-uris-in-use.md#uri-use-cases "mention")
 
 ## Resolving SNOMED CT URIs
 
 ### Overview
 
-[Section 2](../3%20snomed-ct-uris-in-use/2-SNOMED-CT-URI-Space_29951163.html) defines a set of URI spaces that are used to **identify** a variety of SNOMED CT resources, but it does not discuss **resolving** these URIs. The URIs in the standard use the http scheme and the domain name snomed.info, which is owned by SNOMED International. This means that SNOMED International is in control of whether or not these URIs, when treated as URLs and resolved, will result in a document being available, a 404 ("Not Found") error, or something else.
+[2-snomed-ct-uri-space.md](2-snomed-ct-uri-space.md "mention") defines a set of URI spaces used to identify various SNOMED CT resources, but it does not discuss **resolving** these URIs. The URIs in the standard use the http scheme and the domain name snomed.info, which SNOMED International owns. This means that SNOMED International is in control of whether or not these URIs, when treated as URLs and resolved, will result in a document being available, a 404 ("Not Found") error, or something else.
 
 ### URIs Resolved by SNOMED International
 
 SNOMED International resolves URIs for concepts from the SNOMED CT International Edition (of the form `http://snomed.info/id/{SCTID}`) to the public SNOMED CT browser.
 
-URIs for modelling resources (as described in [#id-2.7urisforsnomedresources-background](<../2 snomed-ct-uri-space/#id-2.7urisforsnomedresources-background> "mention")) will, by default, be resolved to a HTML representation of the identified entity. To support machine-readability, the HTTP Accept header will be used to perform content negotiation. For example, the value "`application/fhir+json`" may be supplied to request a FHIR representation in JSON syntax. Following FHIR conventions, a suffix of "`?_format=json`" will be interpreted as equivalent to providing an Accept header of "`application/fhir+json`" with maximum priority. This is to facilitate access via web browsers where access to HTTP headers is not normally available.
+URIs for modelling resources (as described in [#id-2.7urisforsnomedresources-background](2-snomed-ct-uri-space.md#id-2.7urisforsnomedresources-background "mention")) will, by default, be resolved to a HTML representation of the identified entity. To support machine-readability, the HTTP Accept header will be used to perform content negotiation. For example, the value "`application/fhir+json`" may be supplied to request a FHIR representation in JSON syntax. Following FHIR conventions, a suffix of "`?_format=json`" will be interpreted as equivalent to providing an Accept header of "`application/fhir+json`" with maximum priority. This is to facilitate access via web browsers where access to HTTP headers is not normally available.
 
 ### URIs Resolved by Others
 
@@ -35,7 +35,7 @@ What might such a document look like? Let us consider the example URL
 
 * `http://myservice.example.com/?uri=http://snomed.info/id/900000000000498005`
 
-The document ultimately returned by the service might be in JSON or XML or HTML or plain text format and contain information indicating that the SCTID is valid, and refers to a non-extension Concept[^1]. It might also indicate that the service knows about one or more Editions or Versions in which this Concept is defined. It might further supply the Fully Specified Name for the Concept as given in the Version with the most recent effectiveTime. Note that the exact nature of what the service says about the Concept is up to the service itself. One service may offer a RESTful API that allows detailed querying down to the primitive/fully defined status of a versioned Concept, while another may return a representation of properties of a versioned Concept that then needs to be parsed to determine its primitive/fully defined status.
+The document ultimately returned by the service might be in JSON or XML or HTML or plain text format and contain information indicating that the SCTID is valid, and refers to a non-extension Concept[^1]. It may also indicate that the service is aware of one or more Editions or Versions in which this Concept is defined. It might further supply the Fully Specified Name for the Concept as given in the Version with the most recent effectiveTime. Note that the exact nature of what the service says about the Concept is up to the service itself. One service may offer a RESTful API that allows detailed querying down to the primitive/fully defined status of a versioned Concept, while another may return a representation of properties of a versioned Concept that then needs to be parsed to determine its primitive/fully defined status.
 
 ***
 
@@ -98,7 +98,7 @@ For example, here is how an element of Data Type CD might appear in a CDA docume
 
 ### Identifying SNOMED CT Versions in HL7 FHIR
 
-Fast Healthcare Interoperability Resources (FHIR[^3]™) defines a set of 'resources' to represent health and healthcare administration-related information. Rather than OIDs, FHIR uses URIs to identify code systems, usually along with an associated version string. The code system is intended to characterise the set of valid codes, hence the recommended URI to use for this is:
+Fast Healthcare Interoperability Resources (FHIR[^3]™) defines a set of 'resources' to represent health and healthcare administration-related information. Rather than OIDs, FHIR uses URIs to identify code systems, typically accompanied by an associated version string. The code system is intended to characterise the set of valid codes, hence the recommended URI to use for this is:
 
 `http://snomed.info/sct`
 

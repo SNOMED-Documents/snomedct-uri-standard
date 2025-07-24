@@ -1,13 +1,13 @@
 # SNOMED CT URI Space
 
-* [#uris-for-editions-and-versions](./#uris-for-editions-and-versions "mention")
-* [#uris-for-components-and-reference-set-members](./#uris-for-components-and-reference-set-members "mention")
-* [#edition-and-version-relative-component-uris](./#edition-and-version-relative-component-uris "mention")
-* [#uris-for-modules](./#uris-for-modules "mention")
-* [#id-2.6urisforproperties-background](./#id-2.6urisforproperties-background "mention")
-* [#id-2.7urisforsnomedresources-background](./#id-2.7urisforsnomedresources-background "mention")
-* [#comparing-uris-for-equality-of-reference](./#comparing-uris-for-equality-of-reference "mention")
-* [#uris-for-unpublished-content](./#uris-for-unpublished-content "mention")
+* [#uris-for-editions-and-versions](2-snomed-ct-uri-space.md#uris-for-editions-and-versions "mention")
+* [#uris-for-components-and-reference-set-members](2-snomed-ct-uri-space.md#uris-for-components-and-reference-set-members "mention")
+* [#edition-and-version-relative-component-uris](2-snomed-ct-uri-space.md#edition-and-version-relative-component-uris "mention")
+* [#uris-for-modules](2-snomed-ct-uri-space.md#uris-for-modules "mention")
+* [#id-2.6urisforproperties-background](2-snomed-ct-uri-space.md#id-2.6urisforproperties-background "mention")
+* [#id-2.7urisforsnomedresources-background](2-snomed-ct-uri-space.md#id-2.7urisforsnomedresources-background "mention")
+* [#comparing-uris-for-equality-of-reference](2-snomed-ct-uri-space.md#comparing-uris-for-equality-of-reference "mention")
+* [#uris-for-unpublished-content](2-snomed-ct-uri-space.md#uris-for-unpublished-content "mention")
 
 ## URIs for Editions and Versions
 
@@ -33,7 +33,7 @@ The following table shows some examples of URIs for editions and versions.
 
 <table data-full-width="false"><thead><tr><th width="169.87890625">Resource</th><th>URI</th></tr></thead><tbody><tr><td>SNOMED CT International Edition</td><td><code>http://snomed.info/sct/900000000000207008</code></td></tr><tr><td>SNOMED CT International Edition, 20130731</td><td><code>http://snomed.info/sct/900000000000207008/version/20130731</code></td></tr><tr><td>SNOMED CT-AU</td><td><code>http://snomed.info/sct/32506021000036107</code></td></tr><tr><td>SNOMED CT-AU, 31 May 2013</td><td><code>http://snomed.info/sct/32506021000036107/version/20130531</code></td></tr><tr><td>SNOMED CT-AU, 30 Nov 2012</td><td><code>http://snomed.info/sct/32506021000036107/version/20121130</code></td></tr><tr><td>SNOMED CT-SE</td><td><code>http://snomed.info/sct/45991000052106</code></td></tr></tbody></table>
 
-For a more extensive list of SNOMED CT edition URI examples, please refer to [4.4.2 Edition URI Examples](https://confluence.ihtsdotools.org/display/DOCEXTPG/4.4.2+Edition+URI+Examples)
+For a more extensive list of SNOMED CT edition URI examples, please refer to the [Edition URI Examples](https://app.gitbook.com/s/3RKZIWpWFT0ocCgNT16E/4-logical-design/4.4-editions/4.4.2-edition-uri-examples "mention").&#x20;
 
 ***
 
@@ -115,7 +115,7 @@ T**able 2.3: Examples**
 
 ### Background
 
-The [#uris-for-editions-and-versions](./#uris-for-editions-and-versions "mention") section defined URIs for editions and versioned editions. These URIs identify the contents of a Module plus all of the Modules it depends on (based on the module version dependencies). However, it is sometimes necessary to simply identify the contents of a single specified module only.
+The [#uris-for-editions-and-versions](2-snomed-ct-uri-space.md#uris-for-editions-and-versions "mention") section defined URIs for editions and versioned editions. These URIs identify the contents of a Module plus all of the Modules it depends on (based on the module version dependencies). However, it is sometimes necessary to simply identify the contents of a single specified module only.
 
 ### Form
 
@@ -204,9 +204,11 @@ Any two URIs from the [http://snomed.info/](http://snomed.info/) URI space ident
 
 ### Background
 
-The URI formats, defined in the previous sections of this document, can be used to identify SNOMED CT content that has been officially published, and may therefore be stored in an Electronic Health Record and exchanged between clinical systems. However, during the process of creating a SNOMED CT release, concepts may exist in a pre-published state. These concepts are considered to be "work in progress" and subject to change or removal, prior to their official publication. For a variety of reasons (including testing, early adoption etc), users may require a way to identify this [unpublished content](#user-content-fn-4)[^4]. Note that the terminology or code system for SNOMED CT will always be specified as [`http://snomed.info/sct`](http://snomed.info/sct), even when the version of this terminology is an unpublished version, e.g. [`http://snomed.info/xsct/900000000000207008`](http://snomed.info/sct/900000000000207008)
+The URI formats, defined in the previous sections of this document, can be used to identify SNOMED CT content that has been officially published, and may therefore be stored in an Electronic Health Record and exchanged between clinical systems. However, during the process of creating a SNOMED CT release, concepts may exist in a pre-published state. These concepts are considered to be "work in progress" and subject to change or removal, prior to their official publication. For a variety of reasons (including testing, early adoption etc), users may require a way to identify this [unpublished content](#user-content-fn-4)[^4]. Note that the terminology or code system for SNOMED CT will always be specified as [`http://snomed.info/sct`](http://snomed.info/sct), even when the version of this terminology is unpublished, e.g. [`http://snomed.info/xsct/900000000000207008`](http://snomed.info/sct/900000000000207008)
 
-SNOMED International already uses the X (eXperimental) indicator for alpha & beta releases of International and national editions of SNOMED CT, eg xSnomedCT\_BelgiumExtensionRF2\_PREPRODUCTION\_20210315T120000Z/Snapshot/Terminology/xsct2\_Concept\_Snapshot\_BE1000172\_20210315.txt. This additional 'x' is added to make it clear that the contents have not been "officially" published.
+SNOMED International already uses the X (eXperimental) indicator for alpha & beta releases of International and national editions of SNOMED CT, eg `xSnomedCT_BelgiumExtensionRF2_PREPRODUCTION_20210315T120000Z/Snapshot/Terminology/xsct2_Concept_Snapshot_BE1000172_20210315.txt`.&#x20;
+
+This additional 'x' is added to make it clear that the contents have not been "officially" published.
 
 ### Form <a href="#id-2.8urisforunpublishedcontent-form" id="id-2.8urisforunpublishedcontent-form"></a>
 
@@ -232,9 +234,11 @@ The following table shows some examples of URIs for unpublished artefacts.
 
 **Table 2.8: Examples**
 
-<table><thead><tr><th width="241.13671875">Resource</th><th>URI</th></tr></thead><tbody><tr><td>SNOMED CT International Edition, current build</td><td><a href="http://snomed.info/xsct/900000000000207008">http://snomed.info/xsct/900000000000207008</a></td></tr><tr><td>SNOMED CT International Edition, 20220131 beta release</td><td><a href="http://snomed.info/xsct/900000000000207008/version/20220131">http://snomed.info/xsct/900000000000207008/version/20220131</a> </td></tr><tr><td>The concept <a href="http://snomed.info/id/1163215007">1163215007 | Pressure injury|</a>  in the current build of the SNOMED CT International Edition</td><td><a href="http://snomed.info/xsct/900000000000207008/id/1163215007">http://snomed.info/xsct/</a><a href="http://snomed.info/xsct/900000000000207008/version/20220131">900000000000207008</a><a href="http://snomed.info/xsct/900000000000207008/id/1163215007">/id/1163215007</a></td></tr><tr><td>The concept  <a href="http://snomed.info/id/1163215007">1163215007 | Pressure injury|</a> in the 20220131 beta release of the SNOMED CT International Edition</td><td><a href="http://snomed.info/xsct/">http://snomed.info/xsct/</a><a href="http://snomed.info/xsct/900000000000207008/version/20220131">900000000000207008</a><a href="http://snomed.info/xsct/900000000000207008/version/20220131/id/1163215007">/version/20220131/id/1163215007</a></td></tr></tbody></table>
+<table><thead><tr><th width="241.13671875">Resource</th><th>URI</th></tr></thead><tbody><tr><td>SNOMED CT International Edition, current build</td><td><a href="http://snomed.info/xsct/900000000000207008">http://snomed.info/xsct/900000000000207008</a></td></tr><tr><td>SNOMED CT International Edition, 20220131 beta release</td><td><a href="http://snomed.info/xsct/900000000000207008/version/20220131">http://snomed.info/xsct/900000000000207008/version/20220131</a> </td></tr><tr><td>The concept <a href="http://snomed.info/id/1163215007">1163215007 | Pressure injury|</a>  in the current build of the SNOMED CT International Edition</td><td><a href="http://snomed.info/xsct/900000000000207008/id/1163215007">http://snomed.info/xsct/900000000000207008/id/1163215007</a></td></tr><tr><td>The concept  <a href="http://snomed.info/id/1163215007">1163215007 | Pressure injury|</a> in the 20220131 beta release of the SNOMED CT International Edition</td><td><a href="http://snomed.info/xsct/900000000000207008/version/20220131/id/1163215007">http://snomed.info/xsct/900000000000207008/version/20220131/id/1163215007</a></td></tr></tbody></table>
 
-&#x20;For a more extensive list of SNOMED CT edition URI examples, please refer to [4.4.2 Edition URI Examples](https://confluence.ihtsdotools.org/display/DOCEXTPG/4.4.2+Edition+URI+Examples)
+&#x20;For a more extensive list of SNOMED CT edition URI examples, please refer to [Edition URI Examples](https://app.gitbook.com/s/3RKZIWpWFT0ocCgNT16E/4-logical-design/4.4-editions/4.4.2-edition-uri-examples "mention")
+
+
 
 <a href="https://docs.google.com/forms/d/e/1FAIpQLScTmbZIf0UEQwYDkY27EEWBkaiYkHSbR0_9DmFrMLXoQLyL7Q/viewform?usp=pp_url&#x26;entry.1767247133=URI+Standard&#x26;entry.670899847=2%20SNOMED%20CT%20URI%20Space" class="button primary">Provide Feedback</a>
 
