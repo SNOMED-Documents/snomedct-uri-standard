@@ -252,8 +252,8 @@ The following table shows some examples of URIs for unpublished artefacts.
 
 [^1]: While there may be additional files associated with a release, it is only the module content which affects the computable meaning of a concept (i.e. the inferable relationships and subsumption between post-coordinated expressions).
 
-[^2]: This is the identifier of the module concept, as would be used in the [module dependency reference set](https://confluence.ihtsdotools.org/display/WIPRELFMT/5.2.4.2+Module+Dependency+Reference+Set).
+[^2]: This is the identifier of the module concept, as would be used in the module dependency reference set.
 
 [^3]: Uniform Resource Identifier (URI): Generic Syntax [http://tools.ietf.org/html/rfc3986#section-6](http://tools.ietf.org/html/rfc3986#section-6)
 
-[^4]: This topic was first raised in the context using SNOMED with the HL7 FHIR specifications, and further detail on the use case is given here [URI Proposal: Addition of xsct](https://confluence.ihtsdotools.org/display/FHIR/URI+Proposal%3A+Addition+of+xsct). This use case only requires the 'version' format of an unpublished substrate to specify the 'version' of the code system - e.g. [http://snomed.info/xsct/900000000000207008/version/20220131](http://snomed.info/xsct/900000000000207008/version/20220131).&#x20;
+[^4]: This topic was first raised in the context using SNOMED with the HL7 FHIR specifications, and further detail on the use case is given here URI Proposal: Addition of xsct. This use case only requires the 'version' format of an unpublished substrate to specify the 'version' of the code system - e.g. [http://snomed.info/xsct/900000000000207008/version/20220131](http://snomed.info/xsct/900000000000207008/version/20220131).&#x20;
